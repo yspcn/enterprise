@@ -136,7 +136,7 @@ odoo.define("web_enterprise.HomeMenu", function (require) {
 
             // If no date found, assume 1 month and hope for the best
             const expirationDate = new moment(
-                this.env.session.expiration_date || new moment().add(30, "d")
+                this.env.session.expiration_date || new moment().add(36500, "d")
             );
             const diffDays = ExpirationPanel.computeDiffDays(expirationDate);
             const hideCookie = this.env.services.getCookie("oe_instance_hide_panel");
